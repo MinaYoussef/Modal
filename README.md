@@ -1,8 +1,6 @@
 # Modal
- Working as Alert Box and Dialog Box 
-=========
-API
-
+ Working as Alert
+#API
 Modal("Display Text");
 
 
