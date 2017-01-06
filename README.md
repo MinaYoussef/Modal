@@ -2,11 +2,11 @@
 Modal is streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. It can display pictures, PDF, external pages, a page element or even AJAX loaded content.
 required a jQuery script
 ##API
-```
+```javascript
 Modal("Display Text");
 ```
 ### Modal with all options
-```
+```javascript
  DEV.Modal({
            top:5,
            width: 90,
@@ -23,10 +23,10 @@ Modal("Display Text");
 ```
 
 ##Example
-```
+```javascript
 DEV.Modal( "Please enter all required Fields." );
 
-or
+//or
 
 DEV.Modal({
   body : "Please enter all required Fields."
