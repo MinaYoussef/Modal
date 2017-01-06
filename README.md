@@ -1,5 +1,5 @@
 # Modal
-Modal is streamlined, but flexible, dialog prompts with the minimum required functionality and smart defaults. It can display pictures, PDF, external pages, a page element or even AJAX loaded content.
+Modal is a dialog prompts with the minimum required functionality and smart defaults. It can display pictures, PDF, external pages, a page element or even AJAX loaded content.
 required a jQuery script
 ##API
 ```javascript
