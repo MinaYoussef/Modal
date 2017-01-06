@@ -43,7 +43,6 @@ Modal can accept ajax inside the "body" property
            })
    });
 ```
-
 ###Closing The Modal box
 From inside the callback function, to close the modal you can call this function.
 by default the button 1 "OK" close whenever clicked.
@@ -63,7 +62,7 @@ $("button").click(function () {
     }, function () {
         /* some codes */
         $("input").val("new value");
-        DEV.CloseModal();
+        CloseModal();
     });
 });
 ```
