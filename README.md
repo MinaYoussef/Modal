@@ -7,43 +7,63 @@ Modal("Display Text");
 ```
 ### Modal with all options
 ```javascript
- DEV.Modal({
-           top:5,
-           width: 90,
-           left: 5,
-           title: "Please choose an image",
-           showButton2 : true,
-           showButton3 : true,
-           showButton4 : true,
-           button2: "Save",
-           button3: "Reset",
-           button4: "Back",
-           body: '<h1>HTML content</h1>' 
+Modal({
+	top:5,
+	width: 90,
+	left: 5,
+	title: "Please choose an image",
+	showButton2 : true,
+	showButton3 : true,
+	showButton4 : true,
+	button2: "Save",
+	button3: "Reset",
+	button4: "Back",
+	body: '<h1>HTML content</h1>' 
    });
 ```
-###Closing The Modal box
-From inside the callback function, to close the modal you can call this function.
-by default the button 1 "OK" close whenever clicked.
+####Example
 ```javascript
-DEV.CloseModal();
-```
-##Example
-```javascript
-DEV.Modal( "Please enter all required Fields." );
+Modal( "Please enter all required Fields." );
 
 //or
 
-DEV.Modal({
+Modal({
   body : "Please enter all required Fields."
 });
 ```
 ##Ajax
+Modal can accept ajax inside the "body" property
+####Example
 ```javascript
-   DEV.Modal({
+   Modal({
           title : "My Ajax Title",
           top : 0,
           body: $.get("loremIpsum.txt",function(result){
 				  $(".modal_body").html(result);
            })
    });
+```
+
+###Closing The Modal box
+From inside the callback function, to close the modal you can call this function.
+by default the button 1 "OK" close whenever clicked.
+```javascript
+CloseModal();
+```
+####Example
+```javascript
+$("button").click(function () {
+    Modal({
+        body: '<img class="modalImg" style="width: 100%; height:550px;"   src="BG4.png"/>',
+        showButton2: true,
+        button2: "Set Value",
+    }, function () {
+        /* some codes */
+        window.location = "https://www.google.com/?gws_rd=ssl";
+    }, function () {
+        /* some codes */
+        $("input").val("new value");
+        DEV.CloseModal();
+    });
+});
 ```
