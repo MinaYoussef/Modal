@@ -21,7 +21,12 @@ Modal("Display Text");
            body: '<h1>HTML content</h1>' 
    });
 ```
-
+###Closing The Modal box
+From inside the callback function, to close the modal you can call this function.
+by default the button 1 "OK" close whenever clicked.
+```javascript
+DEV.CloseModal();
+```
 ##Example
 ```javascript
 DEV.Modal( "Please enter all required Fields." );
