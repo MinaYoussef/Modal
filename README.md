@@ -32,3 +32,13 @@ DEV.Modal({
   body : "Please enter all required Fields."
 });
 ```
+##Ajax
+```javascript
+   DEV.Modal({
+          title : "My Ajax Title",
+          top : 0,
+          body: $.get("loremIpsum.txt",function(result){
+				  $(".modal_body").html(result);
+           })
+   });
+```
